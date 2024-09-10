@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Registro">
+
+    <TextView
+        android:id="@+id/tag_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="@string/registro"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnVolver" />
+
+    <EditText
+        android:id="@+id/inputUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nombre_usuario"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        app:layout_constraintStart_toStartOf="@+id/inputUserId"
+        app:layout_constraintTop_toBottomOf="@+id/inputUserId"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inputUserLastName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="19dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/apellido"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        app:layout_constraintStart_toStartOf="@+id/inputUserName"
+        app:layout_constraintTop_toBottomOf="@+id/inputUserName"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inputUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/id_usuario"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tag_registro"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inputPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="2dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/telefono"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        app:layout_constraintEnd_toEndOf="@+id/inputUserLastName"
+        app:layout_constraintTop_toBottomOf="@+id/inputUserLastName"
+        tools:ignore="TextFields,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inputUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/correo"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        app:layout_constraintStart_toStartOf="@+id/inputPhone"
+        app:layout_constraintTop_toBottomOf="@+id/inputPhone"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/inputUserPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="#78909C"
+        app:layout_constraintStart_toStartOf="@+id/inputUserEmail"
+        app:layout_constraintTop_toBottomOf="@+id/inputUserEmail"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnVolver"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/home"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_registrar"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:text="@string/registrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
