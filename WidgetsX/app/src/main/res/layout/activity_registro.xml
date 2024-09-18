@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
     tools:context=".Registro">
 
     <TextView
@@ -119,6 +119,7 @@
         android:layout_marginTop="38dp"
         android:layout_marginEnd="20dp"
         android:text="@string/home"
+        android:backgroundTint="#F60"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -129,6 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="53dp"
         android:text="@string/registrar"
+        android:backgroundTint="#F74"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
